@@ -12,8 +12,15 @@ Things to do in local PC
 4. git config --global user.email "github_freshow@163.com"
 5. git remote add origin git@github.com:freshow/project.git
 
+How to remember account and password when push
+C:\Users\Administrator
+1. touch .git-credentials
+2. vim .git-credentials
+3. https://{username}:{password}@github.com
+4. git config --global credential.helper store
 
 Common command line:
-1. git add 
-2. git commit -m ""
-3. git push origin master
+git add 
+git commit -m ""
+git rebase -i HEAD~2
+git push origin master
