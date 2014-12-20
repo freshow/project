@@ -1,0 +1,19 @@
+Things to do in GitHub
+1. Goto https://github.com register a account. Such as "freshow"
+2. Create a New Repository. Please refer to https://help.github.com/articles/create-a-repo/
+======================================================================
+https://github.com/freshow/project
+======================================================================
+
+Things to do in local PC
+1. ssh-keygen -t rsa -C ¡°github_freshow@163.com¡±
+2. ssh -T git@github.com
+3. git config --global user.name "freshow"
+4. git config --global user.email "github_freshow@163.com"
+5. git remote add origin git@github.com:freshow/project.git
+
+
+Common command line:
+1. git add 
+2. git commit -m ""
+3. git push origin master
