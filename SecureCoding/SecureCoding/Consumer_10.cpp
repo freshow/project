@@ -191,6 +191,7 @@ void consumer_2_Producer_1_buffer_4_main(void)
 
 void consumer_main(void)
 {
+    FUNC_CTRL(__FUNCTION__, false);
     consumer_1_Producer_1_buffer_1_main();
     consumer_2_Producer_1_buffer_4_main();
 }

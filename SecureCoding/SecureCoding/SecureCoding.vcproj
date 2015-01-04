@@ -197,6 +197,10 @@
 					RelativePath=".\Consumer_10.cpp"
 					>
 				</File>
+				<File
+					RelativePath=".\MultiThread_2.cpp"
+					>
+				</File>
 			</Filter>
 		</Filter>
 		<Filter

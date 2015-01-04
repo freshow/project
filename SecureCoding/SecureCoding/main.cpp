@@ -8,6 +8,7 @@ int main(int argc, char* argv[])
     chapter2_3_String_Vulnerability(argc, argv);
 
     consumer_main();
+    multiThread_2_main();
 
     system("pause");
 }
