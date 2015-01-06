@@ -198,6 +198,10 @@
 					>
 				</File>
 				<File
+					RelativePath=".\Interlocked_3.cpp"
+					>
+				</File>
+				<File
 					RelativePath=".\MultiThread_2.cpp"
 					>
 				</File>

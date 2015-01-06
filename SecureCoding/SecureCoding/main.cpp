@@ -9,6 +9,7 @@ int main(int argc, char* argv[])
 
     consumer_main();
     multiThread_2_main();
+    interlocked_main();
 
     system("pause");
 }

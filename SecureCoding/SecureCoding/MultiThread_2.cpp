@@ -1,10 +1,10 @@
 #include "MultiThread.h"
 
-const int THREAD_NUM = 2;
-HANDLE g_handles[THREAD_NUM];
-unsigned g_pids[THREAD_NUM];
+static const int THREAD_NUM = 2;
+static HANDLE g_handles[THREAD_NUM];
+static unsigned g_pids[THREAD_NUM];
 
-unsigned int __stdcall threadFunc(PVOID pParam)
+static unsigned int __stdcall threadFunc(PVOID pParam)
 {
     const int* const pThreadNum = (int*)(pParam);
     printf("Thread: %d, addr: %d, PID: %d\n", (*pThreadNum) + 1, g_pids[*pThreadNum], GetCurrentThreadId());
@@ -13,6 +13,8 @@ unsigned int __stdcall threadFunc(PVOID pParam)
 
 void multiThread_2_main(void)
 {
+    FUNC_CTRL(__FUNCTION__, false);
+
     int j = 1;
     g_handles[j] = (HANDLE)_beginthreadex(NULL, 0, threadFunc, &j, 0, &g_pids[j]);
 

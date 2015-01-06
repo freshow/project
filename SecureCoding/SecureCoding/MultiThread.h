@@ -10,5 +10,6 @@
 
 void multiThread_2_main(void);
 void consumer_main(void);
+void interlocked_main(void);
 
 #endif  // MULTI_THREAD_H_
